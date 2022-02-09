@@ -38,4 +38,32 @@ result2 = sum(diffs) ** 0.5 / len(xs)
 
 assert result1 == result2, "result1 != result2"
 
+# filter function 
+# Objects returned by map and filter are iterators, which means that their values aren't stored but generated as needed. 
+# After we've called sum(diffs), diffs becomes empty.  
+# If we want to keep all elements in diffs ==> We have to convert it to a list using list(diffs)
+
+# filter(fn, iterable) works the same way as map, except that fn returns a boolean value and 
+# filter returns all the elements of the iterable for which the fn returns True.
+print("Errors")
+print(errors)
+bad_preds = filter(lambda x: x > 0.5, errors)
+print("Bad predictions")
+print(list(bad_preds))
+
+
+# reduce function reduce(fn, iterable, initializer)
+product = 1
+for num in nums:
+    product *= num
+
+from functools import reduce
+product1 = reduce(lambda x, y: x * y, nums)
+
+assert product == product1 , "product != product1"
+
+
+
+
+
 
