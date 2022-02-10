@@ -31,7 +31,7 @@ def subArraySum(arr, n, sum_):
     print ("No subarray found")
     return 0
 
-arr = [15, 2, 4, 8, 9, 5, 10, 23]
+arr = [2, 1, 4, 10, 8, 5, 10, 23]
 n = len(arr)
 sum_ = 15
  
