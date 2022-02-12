@@ -1,4 +1,2 @@
-## automate-python
+## Programming challenges and problem solving quizes 
 
-- Use python to automate boring stuff 
-- Problem sloving exercises/quizes to practice coding skills
