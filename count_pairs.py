@@ -11,8 +11,7 @@ for item in a_list:
 
 
 
-### Count pairs with given sum
-# O(n^2)
+### Count pairs with given sum: Complexity O(N^2)
 def getPairsCount(arr, n, sum):
  
     count = 0  # Initialize result
@@ -26,16 +25,9 @@ def getPairsCount(arr, n, sum):
  
     return count
  
-### Count pairs with given sum
-# O(n)
+### Count pairs with given sum: Complexity O(N)
 
-# Python 3 implementation of simple method
-# to find count of pairs with given sum.
 import sys
-
-# Returns number of pairs in arr[0..n-1]
-# with sum equal to 'sum'
-
 
 def getPairsCountHaspMap(arr, n, sum):
     
@@ -67,11 +59,9 @@ def getPairsCountHaspMap(arr, n, sum):
 
 # Driver function
 
-arr = [1, 5, 7, -1, 5]
+arr = [1, 5, 8, -1, 5]
 n = len(arr)
 sum = 6
 print("Count of pairs of brute force function is", getPairsCount(arr, n, sum))
 print("Count of pairs of hash map function pairs is", getPairsCountHaspMap(arr,n, sum))
 
-# This code is contributed by
-# Smitha Dinesh Semwal
