@@ -1,7 +1,4 @@
-from ast import List
-from audioop import reverse
-
-
+# Find the K’th Smallest/Largest Element in Unsorted Array 
 def findKthLargest(nums, k):
     nums.sort()
     return(nums[len(nums) - k])

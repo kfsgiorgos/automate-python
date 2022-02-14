@@ -8,4 +8,4 @@ def removeDuplicates(nums):
     return nums[:l]
 
 
-print(removeDuplicates([1,1,2]))
+print(removeDuplicates([1,2,3,3,4]))

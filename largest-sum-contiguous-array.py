@@ -1,3 +1,5 @@
+# Maximum Subarray: Given an integer array nums, 
+# find the contiguous subarray which has the largest sum and return its sum.
 # Leetcode 53
 def maxSubArraySum(a,size):
 	
@@ -14,7 +16,7 @@ def maxSubArraySum(a,size):
 		max_so_far = max(max_ending_here, max_so_far)
 	return max_so_far
 
-# Driver function to check the above function
+
 a = [-2, -3, 4, -1, -2, 1, 9, -3]
 print("Maximum contiguous sum is" , maxSubArraySum(a,len(a)))
 

@@ -2,17 +2,15 @@
 # return the minimal length of a contiguous subarray [numsl, numsl+1, ..., numsr-1, numsr] 
 # of which the sum is greater than or equal to target. If there is no such subarray, return 0 instead.
 
-from importlib_metadata import List
 
-
-def minSubArrayLen(target:int, nums:List[int]):
+def minSubArrayLen(target:int, nums):
     l, total = 0,0 
-    res = len(nums)+10
+    res = len(nums) + 10 # We give a number greater then the length 
 
     for r in range(len(nums)):
         total += nums[r]
         while total >= target:
-            res = min(r - l + 1, min )
+            res = min(r - l + 1, min)
             total -= nums[l]
             l += 1
 

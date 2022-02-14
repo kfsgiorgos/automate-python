@@ -18,8 +18,8 @@ def isValid(s:str) -> bool:
         else:
             if stack == []:
                 return False
-            a = stack.pop()
-            if c != dictCloseOpen[a]:
+            a = stack.pop() # pop() – Deletes the topmost element of the stack 
+            if c != dictCloseOpen[a]: 
                 return False    
     return stack == []
 

@@ -4,7 +4,7 @@ s = "Hello World"
 print(s[::-1]) 
 
 
-### Find subarray with given sum | Set 1 (Nonnegative Numbers)
+### Find subarray with given sum (Nonnegative Numbers)
 
 def subArraySum(arr, n, sum_):
     # Initialize curr_sum as value of first element and starting point as 0
