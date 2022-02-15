@@ -10,13 +10,13 @@ def minSubArrayLen(target:int, nums):
     for r in range(len(nums)):
         total += nums[r]
         while total >= target:
-            res = min(r - l + 1, min)
+            res = min(r - l + 1, res)
             total -= nums[l]
             l += 1
 
     return 0 if res == len(nums)+10 else res
 
 # Driver function to check the above function
-a = [5,1,3,5,10,7,4,9,2,8]
+a = [5,1,3,5,7,7,4,9,2,8]
 print("Minimum Size Subarray Sum is" , minSubArrayLen(15, a))
 
