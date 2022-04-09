@@ -55,20 +55,51 @@ char_list = [char.upper() if not char.isspace() else "+" for char in "I love Mac
 print(char_list)
 
 
-
 # Replace List elements - Ex7
 print("\nNew exercise")
 char_list1 = [" " if char == "+" else char for char in char_list ]
 print(char_list1)
 
 
-# Count items in a list
+# List Comprehension - sum first element of tuple Ex8
+print("\nNew exercise")
+
+pairs = [(1, 'a'), (2, 'b'), (3, 'c')]
+print(f"Pairs: {pairs}")
+print(f"Sum of first elements is: {sum(x[0] for x in pairs)}" )
+
+
+# Count items in a list - Ex9
 print("\nNew exercise")
 # Define a string/phrase
 phrase = 'I love MacOS. MacOS is by far the best operating system.'
 search = 'MacOS'
 count = phrase.count(search)
 print(f"{search} search word, appears {count} times in the given phrase. ")
+
+
+# Lambda functions, Filter - Ex10
+print("\nNew exercise")
+import random
+random_list = random.sample(range(0, 1000), 10)
+random_list.sort()
+print( f"Original list {random_list}")
+new_list = list(filter(lambda x: (x%2 == 0 or x <=100) , random_list))
+print(f"The resulting list {new_list} is produced after applying the filters x%2 == 0 or x <=100")
+
+
+# Lambda functions, Apply - Ex11
+print("\nNew exercise")
+double = lambda x: x * 2
+new_list1 = list(map(lambda x: x-1000, random_list))
+print(f"The resulting list {new_list1} is produced after applying the condition x-1000")
+new_list2 = list(map(double, random_list))
+
+
+
+
+
+
 
 
 
